@@ -1,7 +1,10 @@
 import React from "react";
 import "../styles/header.css";
+import useDarkMode from "../utils/useDarkMode";
 
 const Header = () => {
+  const { theme, toggleTheme } = useDarkMode();
+
   return (
     <div>
       <header class="header container">
@@ -28,6 +31,7 @@ const Header = () => {
                 aria-label="theme-toggle btn"
                 id="theme-toggle"
                 class="header__sun"
+                onClick={toggleTheme}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -88,6 +92,7 @@ const Header = () => {
                 aria-label="theme-toggle btn"
                 id="theme-toggle"
                 class="mobile-nav__sun"
+                onClick={toggleTheme}
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
