@@ -7,8 +7,11 @@ import Featured from "./sections/Featured";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import useDarkMode from "./utils/useDarkMode";
+import useLazyLoading from "./utils/useLazyLoading";
 
 const App = () => {
+  useLazyLoading();
+
   return (
     <div>
       <Header></Header>
