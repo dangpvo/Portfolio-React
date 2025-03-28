@@ -1,9 +1,13 @@
 import React from "react";
 import "../styles/header.css";
+import "../styles/mobile-nav.css";
 import useDarkMode from "../utils/useDarkMode";
+import useMobileNav from "../utils/useMobileNav";
 
 const Header = () => {
   const { theme, toggleTheme } = useDarkMode();
+  const { isMobileNavOpen, toggleMobileNav, mobileNavRef, headerBarsRef } =
+    useMobileNav();
 
   return (
     <div>
@@ -51,7 +55,12 @@ const Header = () => {
               </a>
             </li>
           </ul>
-          <button aria-label="mobile nav button" class="header__bars">
+          <button
+            aria-label="mobile nav button"
+            ref={headerBarsRef}
+            class="header__bars"
+            onClick={toggleMobileNav}
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -68,21 +77,33 @@ const Header = () => {
       </header>
 
       {/* Mobile Navigation */}
-      <div class="mobile-nav">
+      <div ref={mobileNavRef} class="mobile-nav">
         <nav>
           <ul class="mobile-nav__menu">
             <li>
-              <a href="#about" class="mobile-nav__link">
+              <a
+                href="#about"
+                class="mobile-nav__link"
+                onClick={toggleMobileNav}
+              >
                 About
               </a>
             </li>
             <li>
-              <a href="#featured" class="mobile-nav__link">
+              <a
+                href="#featured"
+                class="mobile-nav__link"
+                onClick={toggleMobileNav}
+              >
                 Work
               </a>
             </li>
             <li>
-              <a href="#contact" class="mobile-nav__link">
+              <a
+                href="#contact"
+                class="mobile-nav__link"
+                onClick={toggleMobileNav}
+              >
                 Contact
               </a>
             </li>
