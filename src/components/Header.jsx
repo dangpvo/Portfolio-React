@@ -11,30 +11,30 @@ const Header = () => {
 
   return (
     <div>
-      <header class="header container">
+      <header className="header container">
         <nav>
-          <ul class="header__menu">
+          <ul className="header__menu">
             <li>
-              <a class="header__link" href="#about">
+              <a className="header__link" href="#about">
                 About
               </a>
             </li>
             <li>
-              <a class="header__link" href="#featured">
+              <a className="header__link" href="#featured">
                 Work
               </a>
             </li>
             <li>
-              <a class="header__link" href="#contact">
+              <a className="header__link" href="#contact">
                 Contact
               </a>
             </li>
-            <li class="header__line"></li>
+            <li className="header__line"></li>
             <li>
               <button
                 aria-label="theme-toggle btn"
                 id="theme-toggle"
-                class="header__sun"
+                className="header__sun"
                 onClick={toggleTheme}
               >
                 <svg
@@ -48,7 +48,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                class="header__resume btn"
+                className="header__resume btn"
                 href="https://raw.githubusercontent.com/dangpvo/Resume/main/DangVo_CV.pdf"
               >
                 Resume
@@ -58,7 +58,7 @@ const Header = () => {
           <button
             aria-label="mobile nav button"
             ref={headerBarsRef}
-            class="header__bars"
+            className="header__bars"
             onClick={toggleMobileNav}
           >
             <svg
@@ -67,9 +67,9 @@ const Header = () => {
               fill="currentColor"
             >
               <path
-                fill-rule="evenodd"
+                fillRule="evenodd"
                 d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z"
-                clip-rule="evenodd"
+                clipRule="evenodd"
               />
             </svg>
           </button>
@@ -77,13 +77,13 @@ const Header = () => {
       </header>
 
       {/* Mobile Navigation */}
-      <div ref={mobileNavRef} class="mobile-nav">
+      <div ref={mobileNavRef} className="mobile-nav">
         <nav>
-          <ul class="mobile-nav__menu">
+          <ul className="mobile-nav__menu">
             <li>
               <a
                 href="#about"
-                class="mobile-nav__link"
+                className="mobile-nav__link"
                 onClick={toggleMobileNav}
               >
                 About
@@ -92,7 +92,7 @@ const Header = () => {
             <li>
               <a
                 href="#featured"
-                class="mobile-nav__link"
+                className="mobile-nav__link"
                 onClick={toggleMobileNav}
               >
                 Work
@@ -101,18 +101,18 @@ const Header = () => {
             <li>
               <a
                 href="#contact"
-                class="mobile-nav__link"
+                className="mobile-nav__link"
                 onClick={toggleMobileNav}
               >
                 Contact
               </a>
             </li>
-            <li class="mobile-nav__link-line"></li>
+            <li className="mobile-nav__link-line"></li>
             <li>
               <button
                 aria-label="theme-toggle btn"
                 id="theme-toggle"
-                class="mobile-nav__sun"
+                className="mobile-nav__sun"
                 onClick={toggleTheme}
               >
                 <svg
@@ -127,7 +127,7 @@ const Header = () => {
             <li>
               <a
                 href="https://raw.githubusercontent.com/dangpvo/Resume/main/DangVo_CV.pdf"
-                class="mobile-nav__btn btn"
+                className="mobile-nav__btn btn"
               >
                 Resume
               </a>
