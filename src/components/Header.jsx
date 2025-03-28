@@ -126,7 +126,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="https://raw.githubusercontent.com/dangpvo/Resume/main/DangVo_CV.pdf"
+                href="https://dangpvo.github.io/Resume/DangVo_CV.pdf"
                 className="mobile-nav__btn btn"
               >
                 Resume
