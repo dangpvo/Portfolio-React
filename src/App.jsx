@@ -6,7 +6,6 @@ import About from "./sections/About";
 import Featured from "./sections/Featured";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
-import useDarkMode from "./utils/useDarkMode";
 import useLazyLoading from "./utils/useLazyLoading";
 
 const App = () => {
