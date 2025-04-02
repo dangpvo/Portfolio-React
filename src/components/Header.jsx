@@ -10,7 +10,7 @@ const Header = () => {
     useMobileNav();
 
   return (
-    <div>
+    <>
       <header className="header container">
         <nav>
           <ul className="header__menu">
@@ -138,7 +138,7 @@ const Header = () => {
         </nav>
       </div>
       {/* End Mobile Navigation */}
-    </div>
+    </>
   );
 };
 

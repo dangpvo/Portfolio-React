@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
-    <div>
+    <>
       <section className="hero container">
         <img
           className="hero__img"
@@ -22,7 +22,7 @@ const Hero = () => {
           Reach Out
         </a>
       </section>
-    </div>
+    </>
   );
 };
 

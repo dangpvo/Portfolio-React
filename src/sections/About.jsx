@@ -4,7 +4,7 @@ import { assets } from "../assets/assets";
 
 const About = () => {
   return (
-    <div>
+    <>
       <section id="about" className="about container section">
         <div className="about__content">
           <h2 className="about__title">About</h2>
@@ -51,7 +51,7 @@ const About = () => {
           />
         </div>
       </section>
-    </div>
+    </>
   );
 };
 

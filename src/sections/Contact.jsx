@@ -3,7 +3,7 @@ import "../styles/contact.css";
 
 const Contact = () => {
   return (
-    <div>
+    <>
       <section id="contact" className="contact container section">
         <h2 className="contact__title">Get In Contact</h2>
         <p className="contact__description">
@@ -19,7 +19,7 @@ const Contact = () => {
           Reach out
         </a>
       </section>
-    </div>
+    </>
   );
 };
 

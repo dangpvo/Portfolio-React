@@ -6,7 +6,7 @@ const Featured = () => {
   const featuredProject = projects[0];
 
   return (
-    <div>
+    <>
       <section id="featured" className="featured container section">
         <h3 className="featured__subtitle">Featured project</h3>
         <div className="featured__wrapper">
@@ -69,13 +69,13 @@ const Featured = () => {
                     className="lazy loading"
                     src="https://fakeimg.pl/1170x780"
                     data-src={item}
-                    alt={`Image ${index + 1}`}
+                    alt={`{Project ${featuredProject.name} image ${index + 1}`}
                   />
                 </div>
               ))}
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
