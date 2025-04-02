@@ -49,7 +49,8 @@ const Header = () => {
             <li>
               <a
                 className="header__resume btn"
-                href="https://raw.githubusercontent.com/dangpvo/Resume/main/DangVo_CV.pdf"
+                href="https://dangpvo.github.io/Resume/DangVo_CV.pdf"
+                target="_blank"
               >
                 Resume
               </a>
@@ -128,6 +129,7 @@ const Header = () => {
               <a
                 href="https://dangpvo.github.io/Resume/DangVo_CV.pdf"
                 className="mobile-nav__btn btn"
+                target="_blank"
               >
                 Resume
               </a>
