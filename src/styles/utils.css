@@ -37,6 +37,10 @@
   transition: 0.7s ease-in-out;
 }
 
+.hide {
+  display: none;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .container {
