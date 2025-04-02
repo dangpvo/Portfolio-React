@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/hero.css";
+import { assets } from "../assets/assets";
 
 const Hero = () => {
   return (
@@ -7,7 +8,7 @@ const Hero = () => {
       <section className="hero container">
         <img
           className="hero__img"
-          src="/avatarHome_1.jpg"
+          src={assets.avatar_home}
           alt="Profile picture"
         />
         <h2 className="hero__subtitle">Hi, I'm Dang 👋</h2>
