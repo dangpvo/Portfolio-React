@@ -13,10 +13,9 @@ const Hero = () => {
         <h2 className="hero__subtitle">Hi, I'm Dang 👋</h2>
         <h1 className="hero__title">SOFTWARE ENGINEER.</h1>
         <p className="hero__description">
-          A passionate <strong>Frontend / Fullstack</strong> web developer and
-          <strong>UI/UX</strong>
-          enthusiast specialized in building stunning interactive
-          websites/applications.
+          A passionate <strong>Frontend / Fullstack</strong> Developer and UI/UX
+          enthusiast specialized in building scalable applications with clean
+          code and intuitive design.
         </p>
         <a className="hero__btn btn" href="#contact">
           Reach Out
