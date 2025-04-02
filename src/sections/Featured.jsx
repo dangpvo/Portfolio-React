@@ -1,16 +1,20 @@
 import React from "react";
 import "../styles/featured.css";
+import { projects } from "../assets/assets";
 
 const Featured = () => {
+  const featuredProject = projects[0];
+
   return (
     <div>
       <section id="featured" className="featured container section">
         <h3 className="featured__subtitle">Featured project</h3>
         <div className="featured__wrapper">
-          <h2 className="featured__title">Project</h2>
+          <h2 className="featured__title">{featuredProject.name}</h2>
           <a
             aria-label="link featured project"
-            href="#"
+            href={featuredProject.url}
+            target="_blank"
             className="featured__link"
           >
             <svg
@@ -26,99 +30,49 @@ const Featured = () => {
             </svg>
           </a>
         </div>
-        <p className="featured__description">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-          beatae molestias accusamus quo, eaque dolores! Sequi dignissimos porro
-          assumenda illum nihil non at incidunt fugiat? Officia perferendis
-          animi rerum dolores.
-        </p>
+        <p className="featured__description">{featuredProject.description}</p>
         <div className="featured__info-container">
           <div>
-            <h3 className="featured__label">Tech stack</h3>
+            <h3 className="featured__label">Features</h3>
             <ul className="featured__tech-stack">
-              <li className="featured__info">TailwindCSS</li>
-              <li className="featured__info">ReactJS</li>
-              <li className="featured__info">React-hook-form</li>
-              <li className="featured__info">NextJS</li>
-              <li className="featured__info">Axios</li>
-              <li className="featured__info">Supabase</li>
-              <li className="featured__info">Stribe</li>
+              {featuredProject.features.length === 0
+                ? ""
+                : featuredProject.features.map((item, index) => (
+                    <li key={`feature-${index}`} className="featured__info">
+                      {item}
+                    </li>
+                  ))}
             </ul>
           </div>
           <div>
-            <h3 className="featured__label">Project type</h3>
-            <p className="featured__info">Fullstack</p>
-          </div>
-          <div>
-            <h3 className="featured__label">Timeline</h3>
-            <p className="featured__info">December 2024 - present</p>
+            <h3 className="featured__label">Tech stack</h3>
+            <ul className="featured__tech-stack">
+              {featuredProject.tech_stack.length === 0
+                ? ""
+                : featuredProject.tech_stack.map((item, index) => (
+                    <li key={`techstack-${index}`} className="featured__info">
+                      {item}
+                    </li>
+                  ))}
+            </ul>
           </div>
         </div>
         <div className="featured__img-container">
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img1.jpeg"
-              alt="Image 1"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img2.jpeg"
-              alt="Image 2"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img3.jpeg"
-              alt="Image 3"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img4.jpeg"
-              alt="Image 4"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img5.jpeg"
-              alt="Image 5"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img6.jpeg"
-              alt="Image 6"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img7.jpeg"
-              alt="Image 7"
-            />
-          </div>
-          <div className="featured__img-wrapper">
-            <img
-              className="lazy loading"
-              src="https://fakeimg.pl/1170x780"
-              data-src="/img8.jpeg"
-              alt="Image 8"
-            />
-          </div>
+          {featuredProject.images.length === 0
+            ? ""
+            : featuredProject.images.map((item, index) => (
+                <div
+                  className="featured__img-wrapper"
+                  key={`feat-img-${index}`}
+                >
+                  <img
+                    className="lazy loading"
+                    src="https://fakeimg.pl/1170x780"
+                    data-src={item}
+                    alt={`Image ${index}`}
+                  />
+                </div>
+              ))}
         </div>
       </section>
     </div>
