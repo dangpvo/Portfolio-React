@@ -69,7 +69,7 @@ const Featured = () => {
                     className="lazy loading"
                     src="https://fakeimg.pl/1170x780"
                     data-src={item}
-                    alt={`Image ${index}`}
+                    alt={`Image ${index + 1}`}
                   />
                 </div>
               ))}
