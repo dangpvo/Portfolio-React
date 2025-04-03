@@ -28,7 +28,7 @@ const ProjectItem = ({
         <h3 className="work__project-subtitle">{name}</h3>
         <p className="work__project-description1">{description1}</p>
         <p className="work__project-description2">{description2}</p>
-        <a className="btn work__project-btn" href={url}>
+        <a className="btn work__project-btn" href={url} target="_blank">
           Have a look
         </a>
         {paperUrl === "" ? (

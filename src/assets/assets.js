@@ -94,7 +94,7 @@ export const projects = [
     description_2: `Designed to be lightweight and responsive, it includes sections for my work, skills, and contact information. This project reflects my ability to build clean, structured, and easy-to-navigate web applications.`,
     tech_stack: ["ReactJS"],
     features: [],
-    url: "#",
+    url: "https://dangpvo.netlify.app/",
     paper: "",
     images: [portfolioImg],
   },
