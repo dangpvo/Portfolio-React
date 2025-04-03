@@ -30,8 +30,8 @@ import fe_typescript from "./TechStack/Frontend/typescript.png";
 import be_aspnetcore from "./TechStack/Backend/aspnetcore.png";
 import be_expressjs from "./TechStack/Backend/expressjs.png";
 import be_nodejs from "./TechStack/Backend/nodejs.png";
-import db_postgres from "./TechStack/Database/portgres.png";
-import db_mysql from "./TechStack/Backend/mysql.png";
+import db_postgres from "./TechStack/Database/postgres.png";
+import db_mysql from "./TechStack/Database/mysql.png";
 
 export const assets = {
   avatar_about,
@@ -141,25 +141,74 @@ export const techstack = [
     _id: "fe",
     name: "frontend",
     stack: [
-      fe_html,
-      fe_css,
-      fe_js,
-      fe_typescript,
-      fe_react,
-      fe_angular,
-      fe_redux,
-      fe_tailwindcss,
-      fe_bootstrap,
+      {
+        name: "HTML",
+        url: fe_html,
+      },
+      {
+        name: "CSS",
+        url: fe_css,
+      },
+      {
+        name: "JavaScript",
+        url: fe_js,
+      },
+      {
+        name: "TypeScript",
+        url: fe_typescript,
+      },
+      {
+        name: "React",
+        url: fe_react,
+      },
+      {
+        name: "Angular",
+        url: fe_angular,
+      },
+      {
+        name: "Redux",
+        url: fe_redux,
+      },
+      {
+        name: "Tailwind CSS",
+        url: fe_tailwindcss,
+      },
+      {
+        name: "Bootstrap",
+        url: fe_bootstrap,
+      },
     ],
   },
   {
     _id: "be",
     name: "backend",
-    stack: [be_aspnetcore, be_nodejs, be_expressjs],
+    stack: [
+      {
+        name: "ASP.Net Core",
+        url: be_aspnetcore,
+      },
+      {
+        name: "Node.js",
+        url: be_nodejs,
+      },
+      {
+        name: "Express.js",
+        url: be_expressjs,
+      },
+    ],
   },
   {
     _id: "db",
     name: "database",
-    stack: [db_postgres, db_mysql],
+    stack: [
+      {
+        name: "PortgreSQL",
+        url: db_postgres,
+      },
+      {
+        name: "MySQL",
+        url: db_mysql,
+      },
+    ],
   },
 ];

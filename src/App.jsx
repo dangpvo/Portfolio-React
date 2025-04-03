@@ -7,6 +7,7 @@ import Featured from "./sections/Featured";
 import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import useLazyLoading from "./utils/useLazyLoading";
+import TechStack from "./sections/TechStack";
 
 const App = () => {
   useLazyLoading();
@@ -17,6 +18,7 @@ const App = () => {
       <main>
         <Hero></Hero>
         <About></About>
+        <TechStack></TechStack>
         <Featured></Featured>
         <Work></Work>
         <Contact></Contact>
