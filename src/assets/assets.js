@@ -1,3 +1,4 @@
+// Projects assets
 import fugina_about from "./Fugina/fugina_about.png";
 import fugina_cart from "./Fugina/fugina_cart.png";
 import fugina_checkout from "./Fugina/fugina_checkout.png";
@@ -12,8 +13,25 @@ import pego from "./PEGO/pego.png";
 import portfolioImg from "./Others/portfolio.png";
 import sheetlinkImg from "./Others/sheetlink.jpg";
 
+// Static assets
 import avatar_about from "./avatarAbout_1.jpg";
 import avatar_home from "./avatarHome_1.jpg";
+
+// Techstack assets
+import fe_angular from "./TechStack/Frontend/angular.png";
+import fe_bootstrap from "./TechStack/Frontend/bootstrap.png";
+import fe_css from "./TechStack/Frontend/css.png";
+import fe_html from "./TechStack/Frontend/html.png";
+import fe_js from "./TechStack/Frontend/js.png";
+import fe_react from "./TechStack/Frontend/react.png";
+import fe_redux from "./TechStack/Frontend/redux.png";
+import fe_tailwindcss from "./TechStack/Frontend/tailwindcss.png";
+import fe_typescript from "./TechStack/Frontend/typescript.png";
+import be_aspnetcore from "./TechStack/Backend/aspnetcore.png";
+import be_expressjs from "./TechStack/Backend/expressjs.png";
+import be_nodejs from "./TechStack/Backend/nodejs.png";
+import db_postgres from "./TechStack/Database/portgres.png";
+import db_mysql from "./TechStack/Backend/mysql.png";
 
 export const assets = {
   avatar_about,
@@ -33,7 +51,6 @@ export const assets = {
 //     paper: "", //IEEE paper for example
 //     images: [],
 // },
-
 export const projects = [
   {
     _id: "fugina",
@@ -116,5 +133,33 @@ export const projects = [
     url: "https://youtu.be/hEej9yV276U?si=-YBUGBpdUxN8Yza3",
     paper: "",
     images: [pego],
+  },
+];
+
+export const techstack = [
+  {
+    _id: "fe",
+    name: "frontend",
+    stack: [
+      fe_html,
+      fe_css,
+      fe_js,
+      fe_typescript,
+      fe_react,
+      fe_angular,
+      fe_redux,
+      fe_tailwindcss,
+      fe_bootstrap,
+    ],
+  },
+  {
+    _id: "be",
+    name: "backend",
+    stack: [be_aspnetcore, be_nodejs, be_expressjs],
+  },
+  {
+    _id: "db",
+    name: "database",
+    stack: [db_postgres, db_mysql],
   },
 ];
