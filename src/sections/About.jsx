@@ -1,39 +1,44 @@
 import React from "react";
 import "../styles/about.css";
+import { assets } from "../assets/assets";
 
 const About = () => {
   return (
-    <div>
+    <>
       <section id="about" className="about container section">
         <div className="about__content">
           <h2 className="about__title">About</h2>
           <p className="about__description">
-            Hello there! I'm Dang, a <strong>Frontend / Fullstack</strong> web
-            developer based near Montreal. I wake up in the morning, grab a cup
-            of timmies coffee, open up my laptop and build things that live on
-            the web all day, everyday.
+            Hello! I'm Dang, a <strong>Frontend / Fullstack</strong> web
+            developer based in Germany. Every day, I immerse myself in building
+            scalable and efficient web solutions, driven by a passion for clean,
+            intuitive design.
           </p>
           <p className="about__description">
-            People who know me say I'm obsessed, that's fair, I am very driven
-            and love learning new things.
+            I am deeply committed to continuous learning and improving my
+            skills, always striving to tackle new challenges and create
+            meaningful, impactful projects.
           </p>
           <p className="about__description">
-            I recently created a YouTube channel called
-            <a>Slaying The Dragon</a> where I upload videos on front-end web
-            development topics.
+            I am open to collaborating on meaningful projects involving React,
+            JavaScript, and .NET development.
           </p>
           <hr className="about__hr" />
-          <h3 className="about__subtitle">Technologies</h3>
+          <h3 className="about__subtitle">Connect with me</h3>
           <div className="about__ul-container">
             <ul className="about__ul">
-              <li className="about__list">JavaScript (ES6+)</li>
-              <li className="about__list">CSS</li>
-              <li className="about__list">HTML</li>
+              <li className="about__list">
+                <a href="https://www.linkedin.com/in/dangvo95/" target="_blank">
+                  <i className="bx bxl-linkedin-square"></i>LinkedIn
+                </a>
+              </li>
             </ul>
             <ul className="about__ul">
-              <li className="about__list">ReactJS</li>
-              <li className="about__list">NextJS</li>
-              <li className="about__list">TailwindCSS</li>
+              <li className="about__list">
+                <a href="https://github.com/dangpvo" target="_blank">
+                  <i className="bx bxl-github"></i>GitHub
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -41,12 +46,12 @@ const About = () => {
           <img
             className="about__img lazy loading"
             src="https://fakeimg.pl/1748x2025"
-            data-src="/avatarAbout_1.jpg"
+            data-src={assets.avatar_about}
             alt="Profile picture"
           />
         </div>
       </section>
-    </div>
+    </>
   );
 };
 
