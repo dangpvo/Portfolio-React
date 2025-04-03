@@ -202,7 +202,7 @@ export const techstack = [
     name: "database",
     stack: [
       {
-        name: "PortgreSQL",
+        name: "PostgreSQL",
         url: db_postgres,
       },
       {

@@ -33,7 +33,9 @@ const TechStack = () => {
                           alt={`${stackItem.url} image`}
                         />
                       </div>
-                      <p className="techstack__content-p">{stackItem.name}</p>
+                      <p className="techstack__content-text">
+                        {stackItem.name}
+                      </p>
                     </div>
                   ))}
             </div>
