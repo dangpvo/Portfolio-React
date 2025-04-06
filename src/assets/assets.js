@@ -11,7 +11,8 @@ import fugina_orders from "./Fugina/fugina_orders.png";
 import tuc_swc from "./TUC_SWC/tuc_swc_1.jpg";
 import pego from "./PEGO/pego.png";
 import portfolioImg from "./Others/portfolio.png";
-import sheetlinkImg from "./Others/sheetlink.jpg";
+import sheetlinkImg from "./Others/sheetlink_2.jpg";
+import uplinxDashboardImg from "./Others/uplinx_dashboard_3.png";
 
 // Static assets
 import avatar_about from "./avatarAbout_1.jpg";
@@ -87,17 +88,29 @@ export const projects = [
     ],
   },
   {
-    _id: "portfolio",
-    name: "Portfolio",
+    _id: "uplinx",
+    name: "Uplinx Dashboard",
     description: ``,
-    description_1: `My portfolio highlights my skills in front-end development, featuring projects that blend functionality with clean, modern design.`,
-    description_2: `Designed to be lightweight and responsive, it includes sections for my work, skills, and contact information. This project reflects my ability to build clean, structured, and easy-to-navigate web applications.`,
+    description_1: `Uplinx is a responsive React admin dashboard built with modern technologies like Vite, Tailwind CSS, and Recharts.`,
+    description_2: `The dashboard includes dynamic charts, and modular components designed for easy extension. Uplinx is ideal for developers building admin panels, analytics tools, or SaaS platforms. Features like sidebar navigation, and reusable card components make development faster.`,
     tech_stack: ["ReactJS"],
     features: [],
-    url: "https://dangpvo.netlify.app/",
+    url: "https://uplinx.netlify.app/",
     paper: "",
-    images: [portfolioImg],
+    images: [uplinxDashboardImg],
   },
+  // {
+  //   _id: "portfolio",
+  //   name: "Portfolio",
+  //   description: ``,
+  //   description_1: `My portfolio highlights my skills in front-end development, featuring projects that blend functionality with clean, modern design.`,
+  //   description_2: `Designed to be lightweight and responsive, it includes sections for my work, skills, and contact information. This project reflects my ability to build clean, structured, and easy-to-navigate web applications.`,
+  //   tech_stack: ["ReactJS"],
+  //   features: [],
+  //   url: "https://dangpvo.netlify.app/",
+  //   paper: "",
+  //   images: [portfolioImg],
+  // },
   {
     _id: "tuc_swc",
     name: "TUC_SWC_Designer",
