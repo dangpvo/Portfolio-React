@@ -13,6 +13,7 @@ import pego from "./PEGO/pego.png";
 import portfolioImg from "./Others/portfolio.png";
 import sheetlinkImg from "./Others/sheetlink_2.jpg";
 import uplinxDashboardImg from "./Others/uplinx_dashboard_3.png";
+import elysianStayImg from "./ElysianStay/elysianhotel.png";
 
 // Static assets
 import avatar_about from "./avatarAbout_1.jpg";
@@ -86,6 +87,31 @@ export const projects = [
       fugina_about,
       fugina_login,
     ],
+  },
+  {
+    _id: "elysian",
+    name: "Elysian Stay",
+    description: `FuginaShop is an intuitive e-commerce platform offering a seamless
+          shopping experience with a clean design, fast performance, and
+          user-friendly features. It is built to provide an easy way for users
+          to browse and purchase products online.`,
+    description_1: `ElysianStay is a modern, responsive hotel management platform designed 
+                to simplify room booking and hotel operations.`,
+    description_2: `With an intuitive interface and elegant design, ElysianStay allows users 
+                to easily browse rooms, make reservations, and manage hotel operations 
+                seamlessly across all devices. Whether for guests or hotel staff, it offers 
+                a smooth and efficient experience.`,
+    tech_stack: ["ReactJS", "TailwindCSS", "Context API", "React Router"],
+    features: [
+      "🏨 Browse available rooms with details and images",
+      "📅 Room booking and reservation management",
+      "🛎️ Hotel room management for staff",
+      "🎨 Responsive UI for mobile and desktop",
+      "🚀 Fast and smooth interactions with React",
+    ],
+    url: "https://elysianstay.netlify.app/",
+    paper: "",
+    images: [elysianStayImg],
   },
   {
     _id: "uplinx",
