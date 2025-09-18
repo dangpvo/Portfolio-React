@@ -29,9 +29,15 @@ import fe_react from "./TechStack/Frontend/react.png";
 import fe_redux from "./TechStack/Frontend/redux.png";
 import fe_tailwindcss from "./TechStack/Frontend/tailwindcss.png";
 import fe_typescript from "./TechStack/Frontend/typescript.png";
+import fe_axios from "./TechStack/Frontend/Axios_logo.png";
+import fe_nextjs from "./TechStack/Frontend/nextjs.png";
+import fe_scss from "./TechStack/Frontend/scss.png";
+
 import be_aspnetcore from "./TechStack/Backend/aspnetcore.png";
 import be_expressjs from "./TechStack/Backend/expressjs.png";
 import be_nodejs from "./TechStack/Backend/nodejs.png";
+import be_supabase from "./TechStack/Backend/supabase.png";
+
 import db_postgres from "./TechStack/Database/postgres.png";
 import db_mysql from "./TechStack/Database/mysql.png";
 
@@ -189,6 +195,10 @@ export const techstack = [
         url: fe_css,
       },
       {
+        name: "SCSS",
+        url: fe_scss,
+      },
+      {
         name: "JavaScript",
         url: fe_js,
       },
@@ -201,12 +211,20 @@ export const techstack = [
         url: fe_react,
       },
       {
+        name: "Next.js",
+        url: fe_nextjs,
+      },
+      {
         name: "Angular",
         url: fe_angular,
       },
       {
         name: "Redux",
         url: fe_redux,
+      },
+      {
+        name: "Axios",
+        url: fe_axios,
       },
       {
         name: "Tailwind CSS",
@@ -233,6 +251,10 @@ export const techstack = [
       {
         name: "Express.js",
         url: be_expressjs,
+      },
+      {
+        name: "Supabase",
+        url: be_supabase,
       },
     ],
   },
