@@ -14,6 +14,7 @@ import portfolioImg from "./Others/portfolio.png";
 import sheetlinkImg from "./Others/sheetlink_2.jpg";
 import uplinxDashboardImg from "./Others/uplinx_dashboard_3.png";
 import elysianStayImg from "./ElysianStay/elysianhotel.png";
+import autoDefenderImg from "./Others/autodefender_1.png";
 
 // Static assets
 import avatar_about from "./avatarAbout_1.jpg";
@@ -130,6 +131,18 @@ export const projects = [
     url: "https://uplinx.netlify.app/",
     paper: "",
     images: [uplinxDashboardImg],
+  },
+  {
+    _id: "autodefender",
+    name: "AutoDefender Dashboard",
+    description: ``,
+    description_1: `AutoDefender is a responsive React dashboard that visualizes real-time global cyberattacks and in-car component security across multiple automotive fleets.`,
+    description_2: `Built with React, Recharts, DeckGL, Maplibre, and React Globe, it delivers immersive 2D and 3D attack maps and interactive fleet dashboards. With Supabase authentication and modular components, AutoDefender is ideal for cybersecurity, automotive monitoring, and IoT visualization projects.`,
+    tech_stack: ["ReactJS"],
+    features: [],
+    url: "https://autodefender.netlify.app/",
+    paper: "",
+    images: [autoDefenderImg],
   },
   // {
   //   _id: "portfolio",
