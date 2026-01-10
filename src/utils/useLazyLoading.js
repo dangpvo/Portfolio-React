@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useLazyLoading = () => {
+const useLazyLoading = (deps = []) => {
   useEffect(() => {
     const lazyImages = document.querySelectorAll(".lazy");
 
@@ -28,7 +28,7 @@ const useLazyLoading = () => {
     lazyImages.forEach((img) => observer.observe(img));
 
     return () => observer.disconnect(); // Cleanup observer on component unmount
-  }, []);
+  }, [deps]);
 };
 
 export default useLazyLoading;

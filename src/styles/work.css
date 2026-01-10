@@ -1,13 +1,23 @@
 .work {
+  /* text-align: center; */
+}
+
+.work-align-left {
+  text-align: center;
+}
+
+.work-align-right {
   text-align: center;
 }
 
 .work__title {
+  text-align: center;
   font-size: var(--size-2xl);
   color: var(--clr-light);
 }
 
 .work__description {
+  text-align: center;
   max-width: 60ch;
   font-size: var(--size-sm);
   color: var(--clr-slate600);
@@ -74,6 +84,39 @@
 
 .work__project-subtitle {
   display: none;
+}
+
+.work__tech-stack {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.work__info {
+  font-size: var(--size-sm);
+  color: var(--clr-slate600);
+  text-transform: capitalize;
+}
+
+.work__info.tech-info {
+  /* color: var(--clr-slate400); */
+  color: var(--clr-workTechText);
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--clr-featBg);
+  width: fit-content;
+}
+
+.tech-align-left {
+  justify-content: center;
+}
+
+.tech-align-right {
+  justify-content: center;
 }
 
 /* xs */
@@ -200,6 +243,22 @@
   .work__project-subtitle {
     display: block;
     font-size: var(--size-base);
+  }
+
+  .work-align-left {
+    text-align: left;
+  }
+
+  .work-align-right {
+    text-align: right;
+  }
+
+  .tech-align-left {
+    justify-content: flex-start;
+  }
+
+  .tech-align-right {
+    justify-content: flex-end;
   }
 }
 

@@ -1,0 +1,34 @@
+.scroll-top-btn {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: none;
+  /* background-color: var(--clr-rose); */
+  /* color: #f1f5f9; */
+  color: var(--clr-rose);
+  cursor: pointer;
+  padding: 0;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transition: all 0.3s;
+  z-index: 1000;
+}
+
+.scroll-top-btn i {
+  font-size: 35px;
+}
+
+.scroll-top-btn.show:hover {
+  transform: translateY(-5px);
+}
+
+.scroll-top-btn.show {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}

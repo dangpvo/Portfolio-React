@@ -34,7 +34,7 @@ const Featured = () => {
         <div className="featured__info-container">
           <div>
             <h3 className="featured__label">Features</h3>
-            <ul className="featured__tech-stack">
+            <ul className="featured__features">
               {featuredProject.features.length === 0
                 ? ""
                 : featuredProject.features.map((item, index) => (
@@ -50,7 +50,10 @@ const Featured = () => {
               {featuredProject.tech_stack.length === 0
                 ? ""
                 : featuredProject.tech_stack.map((item, index) => (
-                    <li key={`techstack-${index}`} className="featured__info">
+                    <li
+                      key={`techstack-${index}`}
+                      className="featured__info tech-info"
+                    >
                       {item}
                     </li>
                   ))}

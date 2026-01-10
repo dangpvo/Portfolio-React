@@ -8,22 +8,27 @@ import Work from "./sections/Work";
 import Contact from "./sections/Contact";
 import useLazyLoading from "./utils/useLazyLoading";
 import TechStack from "./sections/TechStack";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+import useDarkMode from "./utils/useDarkMode";
 
 const App = () => {
-  useLazyLoading();
+  const { theme, toggleTheme } = useDarkMode();
+  useLazyLoading([theme]);
 
   return (
     <div>
-      <Header></Header>
+      <Header toggleTheme={toggleTheme} />
       <main>
-        <Hero></Hero>
-        <About></About>
-        <TechStack></TechStack>
-        <Featured></Featured>
-        <Work></Work>
-        <Contact></Contact>
+        <Hero />
+        <About theme={theme} />
+        <TechStack />
+        <Featured />
+        <Work />
+        <Contact />
       </main>
-      <Footer></Footer>
+      <Footer />
+
+      <ScrollToTopButton />
     </div>
   );
 };

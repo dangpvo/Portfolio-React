@@ -47,15 +47,31 @@
   margin-bottom: 0.25em;
 }
 
+.featured__features,
 .featured__tech-stack {
   padding: 0;
   list-style: none;
+}
+
+.featured__tech-stack {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .featured__info {
   font-size: var(--size-sm);
   color: var(--clr-slate600);
   text-transform: capitalize;
+}
+
+.featured__info.tech-info {
+  color: var(--clr-featTechText);
+  text-transform: capitalize;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: var(--clr-featBg);
+  width: fit-content;
 }
 
 .featured__img-container {

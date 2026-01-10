@@ -4,8 +4,8 @@ import "../styles/mobile-nav.css";
 import useDarkMode from "../utils/useDarkMode";
 import useMobileNav from "../utils/useMobileNav";
 
-const Header = () => {
-  const { theme, toggleTheme } = useDarkMode();
+const Header = ({ toggleTheme }) => {
+  // const { theme, toggleTheme } = useDarkMode();
   const { isMobileNavOpen, toggleMobileNav, mobileNavRef, headerBarsRef } =
     useMobileNav();
 

@@ -9,7 +9,7 @@
 }
 
 .hero__img {
-  border-radius: 50%;
+  /* border-radius: 50%; */
   width: 6rem;
   height: 6rem;
   object-fit: cover;
@@ -19,14 +19,14 @@
 
 .hero__subtitle {
   color: var(--clr-slate800);
-  font-size: var(--size-base);
+  font-size: var(--size-3xl);
   line-height: 0.9;
 }
 
 .hero__title {
   color: var(--clr-slate400);
   text-transform: uppercase;
-  font-size: var(--size-4xl);
+  font-size: var(--size-5xl);
   letter-spacing: -0.05em;
   line-height: 0.9;
 }
@@ -54,7 +54,7 @@
   }
 
   .hero__subtitle {
-    font-size: var(--size-lg);
+    font-size: var(--size-4xl);
   }
 
   .hero__title {
@@ -86,11 +86,11 @@
   }
 
   .hero__subtitle {
-    font-size: var(--size-2xl);
+    font-size: var(--size-4xl);
   }
 
   .hero__title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-6xl);
   }
 
   .hero__description {
@@ -114,11 +114,11 @@
   }
 
   .hero__subtitle {
-    font-size: var(--size-4xl);
+    font-size: var(--size-5xl);
   }
 
   .hero__title {
-    font-size: var(--size-9xl);
+    font-size: var(--size-8xl);
   }
 
   .hero__description {
