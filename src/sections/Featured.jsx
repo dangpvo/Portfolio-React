@@ -3,7 +3,7 @@ import "../styles/featured.css";
 import { projects } from "../assets/assets";
 
 const Featured = () => {
-  const featuredProject = projects[0];
+  const featuredProject = projects[2]; //Fugina
 
   return (
     <>

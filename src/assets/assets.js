@@ -67,6 +67,47 @@ export const assets = {
 // },
 export const projects = [
   {
+    _id: "autodefender",
+    name: "AutoDefender Dashboard",
+    description: ``,
+    description_1: `AutoDefender is a responsive React dashboard that visualizes real-time global cyberattacks and in-car component security across multiple automotive fleets.`,
+    description_2: `It delivers immersive 2D and 3D attack maps, interactive fleet dashboards, and real-time security insights. With authentication and a modular architecture, AutoDefender is well suited for cybersecurity, automotive monitoring, and IoT visualization projects.`,
+    tech_stack: [
+      "React",
+      "Vite Build Tool",
+      "Context API",
+      "React Router",
+      "Recharts",
+      "DeckGL",
+      "Maplibre",
+      "React Globe",
+      "Supabase",
+    ],
+    features: [],
+    url: "https://autodefender.netlify.app/",
+    paper: "",
+    images: [autoDefenderImg],
+  },
+  {
+    _id: "uplinx",
+    name: "Uplinx Dashboard",
+    description: ``,
+    description_1: `Uplinx is a responsive admin dashboard prototype designed to provide a clean, intuitive interface for managing data and visualizing insights in modern web applications.`,
+    description_2: `The dashboard includes dynamic charts, and modular components designed for easy extension. Uplinx is ideal for developers building admin panels, analytics tools, or SaaS platforms.`,
+    tech_stack: [
+      "React",
+      "Vite Build Tool",
+      "TailwindCSS",
+      "Context API",
+      "React Router",
+      "Recharts",
+    ],
+    features: [],
+    url: "https://uplinx.netlify.app/",
+    paper: "",
+    images: [uplinxDashboardImg],
+  },
+  {
     _id: "fugina",
     name: "Fugina Shop",
     description: `FuginaShop is an intuitive e-commerce platform prototype offering a seamless
@@ -107,75 +148,6 @@ export const projects = [
     ],
   },
   {
-    _id: "elysian",
-    name: "Elysian Stay",
-    description: ``,
-    description_1: `ElysianStay is a modern, responsive hotel management platform prototype designed 
-                to simplify room booking and hotel operations.`,
-    description_2: `With an intuitive interface and elegant design, ElysianStay allows users 
-                to easily browse rooms, make reservations, and manage hotel operations 
-                seamlessly across all devices. Whether for guests or hotel staff, it offers 
-                a smooth and efficient experience.`,
-    tech_stack: [
-      "React",
-      "Vite Build Tool",
-      "TailwindCSS",
-      "Context API",
-      "React Router",
-    ],
-    features: [
-      "🏨 Browse available rooms with details and images",
-      "📅 Room booking and reservation management",
-      "🛎️ Hotel room management for staff",
-      "🎨 Responsive UI for mobile and desktop",
-      "🚀 Fast and smooth interactions with React",
-    ],
-    url: "https://elysianstay.netlify.app/",
-    paper: "",
-    images: [elysianStayImg],
-  },
-  {
-    _id: "uplinx",
-    name: "Uplinx Dashboard",
-    description: ``,
-    description_1: `Uplinx is a responsive admin dashboard prototype designed to provide a clean, intuitive interface for managing data and visualizing insights in modern web applications.`,
-    description_2: `The dashboard includes dynamic charts, and modular components designed for easy extension. Uplinx is ideal for developers building admin panels, analytics tools, or SaaS platforms.`,
-    tech_stack: [
-      "React",
-      "Vite Build Tool",
-      "TailwindCSS",
-      "Context API",
-      "React Router",
-      "Recharts",
-    ],
-    features: [],
-    url: "https://uplinx.netlify.app/",
-    paper: "",
-    images: [uplinxDashboardImg],
-  },
-  {
-    _id: "autodefender",
-    name: "AutoDefender Dashboard",
-    description: ``,
-    description_1: `AutoDefender is a responsive React dashboard that visualizes real-time global cyberattacks and in-car component security across multiple automotive fleets.`,
-    description_2: `It delivers immersive 2D and 3D attack maps, interactive fleet dashboards, and real-time security insights. With authentication and a modular architecture, AutoDefender is well suited for cybersecurity, automotive monitoring, and IoT visualization projects.`,
-    tech_stack: [
-      "React",
-      "Vite Build Tool",
-      "Context API",
-      "React Router",
-      "Recharts",
-      "DeckGL",
-      "Maplibre",
-      "React Globe",
-      "Supabase",
-    ],
-    features: [],
-    url: "https://autodefender.netlify.app/",
-    paper: "",
-    images: [autoDefenderImg],
-  },
-  {
     _id: "tuc_swc",
     name: "TUC_SWC_Designer",
     description: ``,
@@ -212,6 +184,35 @@ export const projects = [
     images: [pego],
   },
 ];
+
+// {
+//   _id: "elysian",
+//   name: "Elysian Stay",
+//   description: ``,
+//   description_1: `ElysianStay is a modern, responsive hotel management platform prototype designed
+//               to simplify room booking and hotel operations.`,
+//   description_2: `With an intuitive interface and elegant design, ElysianStay allows users
+//               to easily browse rooms, make reservations, and manage hotel operations
+//               seamlessly across all devices. Whether for guests or hotel staff, it offers
+//               a smooth and efficient experience.`,
+//   tech_stack: [
+//     "React",
+//     "Vite Build Tool",
+//     "TailwindCSS",
+//     "Context API",
+//     "React Router",
+//   ],
+//   features: [
+//     "🏨 Browse available rooms with details and images",
+//     "📅 Room booking and reservation management",
+//     "🛎️ Hotel room management for staff",
+//     "🎨 Responsive UI for mobile and desktop",
+//     "🚀 Fast and smooth interactions with React",
+//   ],
+//   url: "https://elysianstay.netlify.app/",
+//   paper: "",
+//   images: [elysianStayImg],
+// },
 
 export const techstack = [
   {
