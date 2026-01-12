@@ -9,6 +9,7 @@ const ProjectItem = ({
   url,
   paperUrl,
   tech_stack,
+  isReady,
 }) => {
   console.log(
     `index: ${index}, name: ${name}, image: ${image}, description1: ${description1}, description2: ${description2}, url: ${url}, paperUrl: ${paperUrl}`
@@ -46,9 +47,15 @@ const ProjectItem = ({
                 </li>
               ))}
         </ul>
-        <a className="btn work__project-btn" href={url} target="_blank">
-          Have a look
-        </a>
+
+        {isReady ? (
+          <a className="btn work__project-btn" href={url} target="_blank">
+            Have a look
+          </a>
+        ) : (
+          <a className="btn work__project-btn btn-disabled">Coming soon</a>
+        )}
+
         {paperUrl === "" ? (
           ""
         ) : (

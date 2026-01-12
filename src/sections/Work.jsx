@@ -31,6 +31,7 @@ const Work = () => {
               url={item.url}
               paperUrl={item.paper}
               tech_stack={item.tech_stack}
+              isReady={item.isReady}
             ></ProjectItem>
           ))}
         </div>

@@ -15,6 +15,7 @@ import sheetlinkImg from "./Others/sheetlink_2.jpg";
 import uplinxDashboardImg from "./Others/uplinx_dashboard_3.png";
 import elysianStayImg from "./ElysianStay/elysianhotel.png";
 import autoDefenderImg from "./Others/autodefender_1.png";
+import kursifyLMSImg from "./Others/kursify-lms-2.png";
 
 // Static assets
 import avatar_home from "./avatarHome_1.jpg";
@@ -67,6 +68,30 @@ export const assets = {
 // },
 export const projects = [
   {
+    _id: "kursifylms",
+    name: "Kursify LMS",
+    description: ``,
+    description_1: `Kursify LMS is a prototype learning management platform developed to showcase an online learning experience. It allows students to log in, enroll in courses, learn at their own pace, and track progress in real time.`,
+    description_2: `For educators, this prototype provides a dashboard to manage courses, learning resources, enrolled students, and revenue, while offering insights into course performance and learner engagement.`,
+    tech_stack: [
+      "React",
+      "Vite Build Tool",
+      "Context API",
+      "React Router",
+      "TailwindCSS",
+      "Clerk",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
+    features: [],
+    url: "",
+    paper: "",
+    images: [kursifyLMSImg],
+    isFeaturedProject: false,
+    isReady: false,
+  },
+  {
     _id: "autodefender",
     name: "AutoDefender Dashboard",
     description: ``,
@@ -87,6 +112,8 @@ export const projects = [
     url: "https://autodefender.netlify.app/",
     paper: "",
     images: [autoDefenderImg],
+    isFeaturedProject: false,
+    isReady: true,
   },
   {
     _id: "uplinx",
@@ -106,6 +133,8 @@ export const projects = [
     url: "https://uplinx.netlify.app/",
     paper: "",
     images: [uplinxDashboardImg],
+    isFeaturedProject: false,
+    isReady: true,
   },
   {
     _id: "fugina",
@@ -146,6 +175,8 @@ export const projects = [
       fugina_about,
       fugina_login,
     ],
+    isFeaturedProject: true,
+    isReady: true,
   },
   {
     _id: "tuc_swc",
@@ -158,6 +189,8 @@ export const projects = [
     url: "https://youtu.be/Hke_8DwVb-U?si=9QK3thUK2SA1dR2S",
     paper: "https://ieeexplore.ieee.org/document/10690658",
     images: [tuc_swc],
+    isFeaturedProject: false,
+    isReady: true,
   },
   {
     _id: "sheetlink",
@@ -170,6 +203,8 @@ export const projects = [
     url: "https://youtu.be/h4Mu-IUzuEg?si=3b5TO8hD-huhA2W1",
     paper: "",
     images: [sheetlinkImg],
+    isFeaturedProject: false,
+    isReady: true,
   },
   {
     _id: "pego",
@@ -182,6 +217,8 @@ export const projects = [
     url: "https://youtu.be/hEej9yV276U?si=-YBUGBpdUxN8Yza3",
     paper: "",
     images: [pego],
+    isFeaturedProject: false,
+    isReady: true,
   },
 ];
 

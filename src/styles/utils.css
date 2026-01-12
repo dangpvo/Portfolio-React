@@ -18,6 +18,16 @@
     0 10px 10px rgba(255, 29, 72, 0.22), 0 0 120px -10px var(--clr-rose);
 }
 
+.btn-disabled {
+  background-color: gray;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.btn-disabled:hover {
+  box-shadow: none;
+}
+
 .container {
   width: 100%;
   margin-inline: auto;

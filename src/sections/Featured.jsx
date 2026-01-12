@@ -1,9 +1,10 @@
 import React from "react";
 import "../styles/featured.css";
-import { projects } from "../assets/assets";
+import { assets, projects } from "../assets/assets";
 
 const Featured = () => {
-  const featuredProject = projects[2]; //Fugina
+  // const featuredProject = projects[2]; //Fugina
+  const featuredProject = projects.find((p) => p.isFeaturedProject); //Fugina
 
   return (
     <>
